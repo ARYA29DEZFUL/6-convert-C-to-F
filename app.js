@@ -6,6 +6,7 @@ let CHANGEButton = $.getElementById("CHANGE")
 
 let textToChange = $.getElementById("textToChange")
 let inputValue = $.getElementById("inputValue")
+let resultText = $.getElementById("result")
 
 let flag = false
 
@@ -19,4 +20,9 @@ CHANGEButton.addEventListener("click", () => {
         inputValue.placeholder = "℉"
         flag = true
     }
+})
+
+RESETButton.addEventListener("click", () => {
+    resultText.classList.add("result-reset")
+    inputValue.value = ""
 })

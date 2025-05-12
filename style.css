@@ -54,6 +54,9 @@ body {
 #result {
   color: yellow;
   font-size: 30px;
+}
+
+.result-reset {
   visibility: hidden;
 }
 
