@@ -11,6 +11,7 @@ let resultText = $.getElementById("result")
 let flag = false
 
 CHANGEButton.addEventListener("click", () => {
+    resultText.classList.add("result-reset")
     if (flag) {
         textToChange.innerHTML = "℃ to ℉"
         inputValue.placeholder = "℃"
