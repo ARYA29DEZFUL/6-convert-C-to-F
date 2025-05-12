@@ -26,3 +26,19 @@ RESETButton.addEventListener("click", () => {
     resultText.classList.add("result-reset")
     inputValue.value = ""
 })
+
+CONVERTButton.addEventListener("click", () => {
+    resultText.classList.remove("result-reset")
+
+    //F = (1.8 × C) + 32
+
+    if (Number(inputValue.value)) {
+
+        flag ? resultText.innerText = (1.8 * Number(inputValue.value) + 32) : resultText.innerText = (Number(inputValue.value) - 32) * 5 / 9
+
+        resultText.classList.remove("result-alert")
+    } else {
+        resultText.innerText = "... The entered value is invalid ! ..."
+        resultText.classList.add("result-alert")
+    }
+})
