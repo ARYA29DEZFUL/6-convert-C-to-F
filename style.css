@@ -99,3 +99,10 @@ body {
   color: orange;
   border: 2px solid orange;
 }
+
+veepn-guard-alert {
+  display: none;
+}
+veepn-lock-screen {
+  display: none;
+}
